@@ -18,21 +18,14 @@ export class MainComponent {
 
   @HostListener('document:click', ['$event'])
   clickOutsideHeader(event: MouseEvent) {
-    const header = document.querySelector('header');
+    let header = document.querySelector('header');
     if (header && !header.contains(event.target as Node)) {
       this.showBurgerMenu = false;
     }
   }
 
   downloadPdf(): void {
-    //  E:\Real Projects\vaibhav-portfolio-website\src\assets\downloads\Vaibhav Dhole (Angular Developer).pdf
-    //const pdfUrl = 'assets/downloads/Vaibhav Dhole (Angular Developer).pdf'; // Path to your PDF file
-    const pdfUrl = 'assets/downloads/Vaibhav Dhole Angular Developer (Resume).pdf'; // Path to your PDF file
-
-    //   const link = document.createElement('a');
-    //   link.href = pdfUrl;
-    //   link.download = 'Vaibhav Dhole (Angular Developer).pdf'; // Name of the downloaded file
+   let pdfUrl = 'assets/downloads/Vaibhav-Dhole Angular Developer (Resume).pdf';  
     window.open(pdfUrl, '_blank');
-    //   link.click();
   }
 }
