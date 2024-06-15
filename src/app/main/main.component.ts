@@ -25,7 +25,8 @@ export class MainComponent {
   }
 
   downloadPdf(): void {
-   let pdfUrl = 'assets/downloads/Vaibhav-Dhole Angular Developer (Resume).pdf';  
+    let pdfUrl = 'assets/downloads/Vaibhav-Dhole Angular Developer (Resume).pdf'; 
     window.open(pdfUrl, '_blank');
+
   }
 }
