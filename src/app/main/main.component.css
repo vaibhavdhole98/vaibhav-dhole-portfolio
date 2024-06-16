@@ -864,3 +864,45 @@ footer p {
     bottom: 45px;
     left: 20%;
 }
+
+
+/* Responsive Styles */
+
+@media (max-width: 500px) {
+    #about .card {
+        background-color: white;
+        width: 85%;
+        padding: 20px 10px 30px;
+        border: none;
+        border-radius: 6px;
+        margin: auto;
+    }
+    /* #about .card {
+        background-color: white;
+        width: 80%;
+        padding: 40px 40px 60px;
+        border: none;
+        border-radius: 6px;
+        margin: auto;
+    } */
+    .section-heading-paragraph {
+        font-size: 1.2em;
+    }
+    .section-heading-text {
+        font-size: 1.5em;
+    }
+    .about-paragraph {
+        font-size: 0.9em;
+        text-align: left;
+        /* Change to left align for better readability on small screens */
+        line-height: 1.4;
+        /* Adjust line-height for better spacing */
+    }
+    #triangle-two {
+        bottom: 20em;
+    }
+    #triangle-three {
+        bottom: 15em;
+        left: 95%;
+    }
+}
