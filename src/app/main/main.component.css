@@ -870,7 +870,7 @@ footer p {
 
 @media (max-width: 500px) {
     #about .card {
-        background-color: white;
+        /* background-color: white; */
         width: 85%;
         padding: 20px 10px 30px;
         border: none;
